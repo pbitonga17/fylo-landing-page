@@ -1,0 +1,110 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* * * HEADER * * */
+header img {
+    width: 20vw;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 30px;
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* * * MAIN * * */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    max-width: 70rem;
+}
+.heading-image img {
+    width: 100%;
+}
+.about-image img {
+    width: 100%;
+}
+/* * * FIRST CONTAINER * * */
+.first-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 50px 40px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.heading h1 {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2rem;
+}
+.heading p {
+    font-size: 0.9rem;
+}
+form {
+    display: grid;
+    gap: 1rem;
+}
+#h-email {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#h-submit {
+    color: white;
+    padding: 15px;
+    background-color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+    border-radius: 5px;
+}
+
+/* * * SECOND CONTAINER * * */
+.second-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+    padding: 0 30px;
+}
+.second-container::before {
+    content: url(../images/bg-curve-mobile.svg);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transform: translateY(-90%);
+}
