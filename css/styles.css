@@ -277,6 +277,12 @@ footer li a {
         display: flex;
         width: 100%;
     }
+    #h-email {
+        width: 20vw;
+    }
+    #h-submit {
+        width: 10vw;
+    }
     .second-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -322,6 +328,7 @@ footer li a {
     }
     .signup {
         text-align: left;
+        margin: auto;
     }
     .signup h2 {
         font-size: 2rem;
@@ -330,10 +337,10 @@ footer li a {
         font-size: 1rem;
     }
     #signup {
-        width: 100%;
+        width: 30vw;
     }
     #signup-submit {
-        width: 40%;
+        width: 15vw;
     }
     footer {
         display: grid;
