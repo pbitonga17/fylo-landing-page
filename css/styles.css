@@ -44,10 +44,10 @@ main {
     max-width: 70rem;
 }
 .heading-image img {
-    width: 100%;
+    max-width: 100%;
 }
 .about-image img {
-    width: 100%;
+    max-width: 100%;
 }
 /* * * FIRST CONTAINER * * */
 .first-container {
@@ -115,7 +115,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    align-items: center;
 }
 .about h2 {
     text-align: center;
@@ -189,7 +188,7 @@ main {
 form {
     display: grid;
     gap: 1rem;
-    width: 65vw;
+    width: 90%;
     margin: 0 auto;
 }
 #signup {
@@ -246,3 +245,148 @@ footer li a {
 }
 
 /* * * * * * * * * * * * M E D I A   Q U E R Y * * * * * * * * * * * */
+
+@media screen and (min-width: 1000px) {
+    header {
+        margin: 5vw 5vw;
+    }
+    header img {
+        width: 10vw;
+    }
+    main {
+        display: grid;
+        place-items: center;
+        max-width: 100vw;
+    }
+    .first-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 200px;
+        padding: 5vw 5vw;
+    }
+    .heading {
+        text-align: left;
+    }
+    .heading h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .heading p {
+        font-size: 0.85rem;
+    }
+    .heading-email form {
+        display: flex;
+        width: 100%;
+    }
+    #h-submit {
+        width: 20vw;
+    }
+    .second-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'about image';
+        padding: 10vw 5vw;
+    }
+    .second-container::before {
+        content: url(../images/bg-curve-desktop.svg);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        transform: translateY(-90%);
+    }
+    
+    .about {
+        grid-area: about;
+        align-items: flex-start;
+    }
+    .about h2 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .about p {
+        font-size: 0.7rem;
+        margin-right: 50px;
+    }
+    .about a {
+        font-size: 0.7rem;
+    }
+    .review {
+        width: 100%;
+    }
+    .about-image {
+        grid-area: image;
+    }
+    .third-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5vw;
+    }
+    .signup {
+        text-align: left;
+    }
+    .signup h2 {
+        font-size: 1.8rem;
+    }
+    .signup p {
+        font-size: 0.9rem;
+    }
+    #signup {
+        width: 100%;
+    }
+    #signup-submit {
+        width: 40%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: baseline;
+        padding: 5vw;
+    }
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+
+    }
+}
+@media screen and (min-width: 1400px) {
+    header {
+        margin: 5vw 10vw;
+    }
+    .first-container {
+        padding: 0 10vw;
+    }
+    .heading h1 {
+        font-size: 2.1rem;
+    }
+    .heading p {
+        font-size: 1.1rem;
+    }
+    .second-container {
+        padding: 5vw 10vw;
+    }
+    .about h2 {
+        font-size: 2.1rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .about a {
+        font-size: 1rem;
+    }
+    .third-container {
+        padding: 5vw 10vw;
+    }
+    .signup h2 {
+        font-size: 2.2rem;
+    }
+    .signup p {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 5vw 10vw;
+    }
+}
