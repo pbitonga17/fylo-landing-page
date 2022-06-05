@@ -75,8 +75,7 @@ main {
 .first-container form {
     display: grid;
     gap: 1rem;
-    width: 80vw;
-    margin: 0 auto;
+    width: 100%;
 }
 #h-email {
     width: 100%;
@@ -248,7 +247,7 @@ footer li a {
 
 @media screen and (min-width: 1000px) {
     header {
-        margin: 5vw 5vw;
+        margin: 5vw 10vw;
     }
     header img {
         width: 10vw;
@@ -262,31 +261,28 @@ footer li a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 200px;
-        padding: 5vw 5vw;
+        padding: 50px 10vw;
     }
     .heading {
         text-align: left;
     }
     .heading h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 3rem;
     }
     .heading p {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
     .heading-email form {
         display: flex;
         width: 100%;
-    }
-    #h-submit {
-        width: 20vw;
     }
     .second-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             'about image';
-        padding: 10vw 5vw;
+        padding: 10vw 10vw;
     }
     .second-container::before {
         content: url(../images/bg-curve-desktop.svg);
@@ -303,15 +299,15 @@ footer li a {
         align-items: flex-start;
     }
     .about h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: left;
     }
     .about p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin-right: 50px;
     }
     .about a {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .review {
         width: 100%;
@@ -322,16 +318,16 @@ footer li a {
     .third-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 5vw;
+        padding: 10vw;
     }
     .signup {
         text-align: left;
     }
     .signup h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .signup p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     #signup {
         width: 100%;
@@ -343,7 +339,7 @@ footer li a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: baseline;
-        padding: 5vw;
+        padding: 5vw 10vw;
     }
     .footer-list {
         display: grid;
@@ -385,6 +381,45 @@ footer li a {
     }
     .signup p {
         font-size: 1rem;
+    }
+    footer {
+        padding: 5vw 10vw;
+    }
+}
+@media screen and (min-width: 2000px) {
+    header {
+        margin: 5vw 10vw;
+    }
+    .first-container {
+        padding: 0 10vw;
+    }
+    .heading h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .heading p {
+        font-size: 1.9rem;
+    }
+    .second-container {
+        padding: 5vw 10vw;
+    }
+    .about h2 {
+        font-size: 3.8rem;
+    }
+    .about p {
+        font-size: 1.9rem;
+    }
+    .about a {
+        font-size: 1.9rem;
+    }
+    .third-container {
+        padding: 5vw 10vw;
+    }
+    .signup h2 {
+        font-size: 3.8rem;
+    }
+    .signup p {
+        font-size: 1.9rem;
     }
     footer {
         padding: 5vw 10vw;
