@@ -89,6 +89,7 @@ main {
     background-color: hsl(224, 93%, 58%);
     border: 1px solid hsl(224, 93%, 58%);
     border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 /* * * SECOND CONTAINER * * */
@@ -201,6 +202,7 @@ form {
     border: 1px solid hsl(224, 93%, 58%);
     border-radius: 5px;
     color: white;
+    -webkit-appearance: none;
 }
 /* * * FOOTER * * */
 footer {
